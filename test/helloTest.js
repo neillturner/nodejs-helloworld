@@ -1,5 +1,6 @@
 //Setup client with automatic tests on each response
 var api = require('nodeunit-httpclient').create({
+    host: 'localhost', 
     port: 8080,
     path: '/',   //Base URL for requests
     status: 200,    //Test each response is OK (can override later)
@@ -10,11 +11,17 @@ var api = require('nodeunit-httpclient').create({
 });
 
 //Automatic tests on response object
-exports.test1 = function(test) {
-    api.get(test, '/', {
-        status: 200,
-        headers: { 'content-type': 'text/plain' },
-        body: 'Hello World'
-    })
-};
+//exports.test1 = function(test) {
+//    api.get(test, '/', {
+//        status: 200,
+//        headers: { 'content-type': 'text/plain' },
+//        body: 'Hello World'
+//    })
+//};
 
+exports.test1 = function(test) {
+    api.get(test, '/', function(res) {
+        test.equal(res.body,'Hello World');
+        test.done();
+    });
+};
