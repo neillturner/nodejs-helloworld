@@ -1,0 +1,25 @@
+{
+  "author": "NeillTurner",
+  "name": "eg-helloworld",
+  "description": "hello world sample app",
+  "version": "0.1.1",
+  "repository": {
+    "url": ""
+  },
+  "main": "./lib/app.js",
+  "keywords": [
+    "hello",
+    "world",
+    "http"
+  ],
+  "bin": {
+    "helloworld": "./bin/helloworld"
+  },
+  "publishConfig" : {
+     "registry" : "http://192.168.33.11:4783/"
+  },  
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
