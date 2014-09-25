@@ -2,8 +2,7 @@
 var api = require('nodeunit-httpclient').create({
     port: 8080,
     path: '/api',   //Base URL for requests
-    status: 200,    //Test each response is OK (can override later)
-    headers: {)
+    status: 200
     }
 });
 
