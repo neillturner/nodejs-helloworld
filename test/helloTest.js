@@ -1,7 +1,7 @@
 //Setup client with automatic tests on each response
 var api = require('nodeunit-httpclient').create({
     port: 8080,
-    path: '/api',   //Base URL for requests
+    path: '/',   //Base URL for requests
     status: 200,    //Test each response is OK (can override later)
     headers: {      //Test that each response must have these headers (can override later)
         'content-type': 'text/plain'
