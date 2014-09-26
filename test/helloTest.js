@@ -1,6 +1,6 @@
 //Setup client with automatic tests on each response
 var api = require('nodeunit-httpclient').create({
-    host: '192.168.33.41', 
+    host: 'localhost', 
     port: 8080,
     path: '/',   //Base URL for requests
     status: 200,    //Test each response is OK (can override later)
