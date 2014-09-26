@@ -8,9 +8,9 @@ module.exports = function(grunt) {
              }
           }       
     
-          nodeunit: {
-            all: ['test/*Test.js']
-        }
+ //         nodeunit: {
+ //           all: ['test/*Test.js']
+ //       }
     });
     
  
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     // Load nodeunit task  
     
     grunt.loadNpmTasks('grunt-nodemon');
-    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+//    grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
 };
 
