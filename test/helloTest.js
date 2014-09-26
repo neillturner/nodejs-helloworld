@@ -19,9 +19,4 @@ exports.test1 = function(test) {
    })
 };
 
-//exports.test1 = function(test) {
-//    api.get(test, '/', function(res) {
-//        test.equal(res.body,'Hello World');
-//        test.done();
-//    });
-//};
+
