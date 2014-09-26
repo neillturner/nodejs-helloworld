@@ -27,8 +27,8 @@ module.exports = function(grunt) {
 
     // Load nodeunit task  
     
-    grunt.loadNpmTasks('grunt-nodemon');
-//    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+//    grunt.loadNpmTasks('grunt-nodemon');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
 };
 
