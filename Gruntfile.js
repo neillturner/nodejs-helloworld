@@ -14,8 +14,18 @@ module.exports = function(grunt) {
           wait: {
             options: {
                 delay: 120000
-          }},    
-    
+            },
+            pause: {      
+		        options: {
+		           before : function(options) {
+		                 console.log('pausing %dms', options.delay);
+		           },
+		           after : function() {
+		                 console.log('pause end');
+		           }
+		       }
+           },
+          },    
           nodeunit: {
             all: ['test/*Test.js']
         }
