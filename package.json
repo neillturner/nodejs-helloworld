@@ -2,7 +2,7 @@
   "author": "NeillTurner",
   "name": "eg-helloworld",
   "description": "hello world sample app",
-  "version": "0.1.%env.BUILD_NUMBER%",
+  "version": "0.1.0",
   "repository": {
     "url": ""
   },
