@@ -29,11 +29,16 @@ module.exports = function(grunt) {
           nodeunit: {
             all: ['test/*Test.js']
           }
+          exit: {
+            normal: {
+          }
+    }          
     });
 
     // Load nodeunit task  
     //grunt.loadNpmTasks('grunt-wait');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    grunt.loadNpmTasks('grunt-exit');
 
 };
 
