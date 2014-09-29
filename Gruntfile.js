@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
           wait: {
             options: {
-                delay: 60000
+                delay: 120000
             },
             pause: {      
 		        options: {
