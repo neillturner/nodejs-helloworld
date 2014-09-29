@@ -4,7 +4,6 @@ module.exports = function(grunt) {
     grunt.util.spawn({
       cmd: 'node',
       args: ['lib/app.js']
- //     opts: {stdio: 'inherit'}
     });
   });
 
@@ -12,12 +11,18 @@ module.exports = function(grunt) {
 
     // Project configuration.                                                                                                                                                                
     grunt.initConfig({
+          wait: {
+            options: {
+                delay: 300000
+          },    
+    
           nodeunit: {
             all: ['test/*Test.js']
         }
     });
 
     // Load nodeunit task  
+    grunt.loadNpmTasks('grunt-wait');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
 };
