@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           wait: {
             options: {
                 delay: 300000
-          },    
+          }},    
     
           nodeunit: {
             all: ['test/*Test.js']
