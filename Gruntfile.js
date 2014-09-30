@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           },      
           wait: {
             options: {
-                delay: 60000
+                delay: 20000
             },
             pause: {      
 		        options: {
