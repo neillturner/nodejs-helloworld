@@ -11,32 +11,31 @@ module.exports = function(grunt) {
   
      // Project configuration.                                                                                                                                                                
     grunt.initConfig({
-    //      wait: {
-    //        options: {
-    //            delay: 60000
-    //        },
-    //        pause: {      
-	//	        options: {
-	//	           before : function(options) {
-	//	                 console.log('pausing %dms', options.delay);
-	//	           },
-	//	           after : function() {
-	//	                 console.log('pause end');
-	//	           }
-	//	       }
-    //        }
-    //      },    
+          wait: {
+            options: {
+                delay: 60000
+            },
+            pause: {      
+		        options: {
+		           before : function(options) {
+		                 console.log('pausing %dms', options.delay);
+		           },
+		           after : function() {
+		                 console.log('pause end');
+		           }
+		       }
+            }
+          },    
           nodeunit: {
             all: ['test/*Test.js']
           },
           exit: {
             normal: {
           }
-    }          
     });
 
     // Load nodeunit task  
-    //grunt.loadNpmTasks('grunt-wait');
+    grunt.loadNpmTasks('grunt-wait');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-exit');
 
