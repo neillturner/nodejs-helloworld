@@ -18,8 +18,7 @@ module.exports = function(grunt) {
                       async: true,
                     }
               }
-          }      
-    
+          },      
           wait: {
             options: {
                 delay: 60000
