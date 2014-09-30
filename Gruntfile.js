@@ -11,15 +11,23 @@ module.exports = function(grunt) {
   
      // Project configuration.                                                                                                                                                                
     grunt.initConfig({
-          shell: {
-              server: {
-                  command: 'node lib/app.js',
-                    options: {
-                      async: true,
-                      execOptions: { detached: false },
-                    }
+          bgShell: {
+	          _defaults: {
+	               bg: true
+              },
+              runNode: {
+                 cmd: 'node lib/app.js',
               }
-          },      
+          },    
+ //         shell: {
+ //             server: {
+ //                 command: 'node lib/app.js',
+ //                   options: {
+ //                     async: true,
+ //                     execOptions: { detached: false },
+ //                   }
+ //             }
+ //         },      
           wait: {
             options: {
                 delay: 20000
@@ -58,7 +66,7 @@ module.exports = function(grunt) {
     });
 
     // Load nodeunit task 
-    grunt.loadNpmTasks('grunt-shell-spawn');
+    grunt.loadNpmTasks('grunt-bg-shell');
     grunt.loadNpmTasks('grunt-wait');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
    // grunt.loadNpmTasks('grunt-passfail');
