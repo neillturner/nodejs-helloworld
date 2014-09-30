@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                   command: 'node lib/app.js',
                     options: {
                       async: true,
+                      execOptions: { detached: false },
                     }
               }
           },      
