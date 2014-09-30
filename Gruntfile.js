@@ -37,19 +37,19 @@ module.exports = function(grunt) {
           nodeunit: {
             all: ['test/*Test.js']
           },
-          passfail: {
-             options: {
-                force: true,
-             },
-             all: {
-               success: function() {
-                  console.log("Cool :)")
-               },
-               fail: function() {
-                  console.log("Lame :'(")
-               }
-             }
-          },          
+    //      passfail: {
+    //         options: {
+   //             force: true,
+   //          },
+  //          all: {
+   //            success: function() {
+   //               console.log("Cool :)")
+   //            },
+   //            fail: function() {
+  //                console.log("Lame :'(")
+   //            }
+    //         }
+   //       },          
           exit: {
             normal: {
             } 
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-shell-spawn');
     grunt.loadNpmTasks('grunt-wait');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
-    grunt.loadNpmTasks('grunt-passfail');
+   // grunt.loadNpmTasks('grunt-passfail');
     grunt.loadNpmTasks('grunt-exit');
 
 };
