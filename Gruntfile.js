@@ -17,7 +17,7 @@ module.exports = function(grunt) {
               },
               runNode: {
                  cmd: 'node lib/app.js',
-              }
+              },
               endNode: {
                  cmd: 'kill $(ps aux | grep \'[n]ode lib/app.js\' | awk \'{print $2}\')',
               }           
