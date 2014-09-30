@@ -11,12 +11,14 @@ module.exports = function(grunt) {
   
      // Project configuration.                                                                                                                                                                
     grunt.initConfig({
-          server: {
-             command: 'node lib/app.js',
-             options: {
-                async: true,
-             }
-          },    
+          shell: {
+              server: {
+                  command: 'node lib/app.js',
+                    options: {
+                      async: true,
+                    }
+              }
+          }      
     
           wait: {
             options: {
