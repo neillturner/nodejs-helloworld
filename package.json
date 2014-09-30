@@ -24,7 +24,7 @@
     "grunt-cli": ">= 0.0.1",    
     "grunt-contrib-jshint": ">= 0.0.1",
     "grunt-contrib-nodeunit": ">= 0.0.1",
-    "grunt-shell-spawn": ">= 0.0.1",
+    "grunt-bg-shell": ">= 0.0.1",
     "grunt-passfail": ">= 0.0.1",
     "grunt-wait": ">= 0.0.1",
     "grunt-exit": ">= 0.0.1",
