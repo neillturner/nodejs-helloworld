@@ -12,11 +12,13 @@ var api = require('nodeunit-httpclient').create({
 
 //Automatic tests on response object
 exports.test1 = function(test) {
+    test.expect(1);
     api.get(test, '/', {
         status: 200,
         headers: { 'content-type': 'text/plain' },
         body: 'Hello Fail World\n'
    })
+   test.done();
 };
 
 
