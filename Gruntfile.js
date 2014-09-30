@@ -39,7 +39,7 @@ module.exports = function(grunt) {
           },
           passfail: {
              options: {
-                force: true
+                force: true,
              },
              all: {
                success: function() {
