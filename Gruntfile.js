@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 		           after : function() {
 		                 console.log('pause end');
 		           }
-		       }
+		        }
             }
           },    
           nodeunit: {
@@ -31,6 +31,7 @@ module.exports = function(grunt) {
           },
           exit: {
             normal: {
+            } 
           }
     });
 
