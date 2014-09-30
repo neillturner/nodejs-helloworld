@@ -16,7 +16,7 @@ exports.test1 = function(test) {
     api.get(test, '/', {
         status: 200,
         headers: { 'content-type': 'text/plain' },
-        body: 'Hello Fail World\n'
+        body: 'Hello World\n'
    })
    test.done();
 };
