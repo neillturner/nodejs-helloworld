@@ -16,7 +16,7 @@
     "helloworld": "./bin/helloworld"
   },
   "publishConfig" : {
-     "registry" : "http://192.168.33.11:4783/"
+     "registry" : "http://10.33.136.247:4783"
   },  
   "dependencies": {},
   "devDependencies": {
